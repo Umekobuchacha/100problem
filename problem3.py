@@ -1,9 +1,9 @@
 str1 = "パトカー"
 str2 = "タクシー"
-str3 = ""
+output = ""
 
-for x in range(len(str1)):
-    str3 += str1[x]
-    str3 += str2[x]
+for (a, b) in zip(str1, str2):
+    output += a
+    output += b
 
-print(str3)
+print(output)
