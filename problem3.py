@@ -2,7 +2,11 @@ input = "Now I need a drink, alcoholic of course, after the heavy lectures invol
 tmp = input.split(' ')
 list = []
 
-for x in tmp:
-    list.append(len(x))
+for word in tmp:
+    count = 0
+    for char in word:
+        if char.isalpha():
+            count += 1
+    list.append(count)
 
 print(list)
