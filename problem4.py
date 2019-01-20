@@ -1,8 +1,17 @@
-input = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-tmp = input.split(' ')
-list = []
+input = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
+words = input.split(' ')
+array = (1, 5, 6, 7, 8, 9, 15, 16, 19)
+dic = {}
 
-for x in tmp:
-    list.append(len(x))
+count = 0
 
-print(list)
+for word in words:
+    count += 1
+    tmp = ""
+    if count in array:
+        tmp = word[:1]
+    else:
+        tmp = word[:2]
+    dic[tmp] = count
+
+print(dic)
