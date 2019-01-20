@@ -1,9 +1,8 @@
-str1 = "パトカー"
-str2 = "タクシー"
-output = ""
+input = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+tmp = input.split(' ')
+list = []
 
-for (a, b) in zip(str1, str2):
-    output += a
-    output += b
+for x in tmp:
+    list.append(len(x))
 
-print(output)
+print(list)
